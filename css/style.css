@@ -1,0 +1,236 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Split screen */
+  .main-page {
+    display: flex;
+  }
+  /* Start Left Side Style */
+  .left-side {
+    flex: 0.2;
+    border-right: 1px solid #eff3f4;
+    padding-right: 15px;
+  }
+  .left-side .navigations ul li {
+    padding-bottom: 25px;
+    font-size: 20px;
+  }
+  .left-side .navigations ul li i {
+    font-weight: 600;
+  }
+  .left-side .navigations ul li .logo {
+    color: #1da1f2;
+    font-size: 35px;
+  }
+  .left-side .navigations ul li a {
+      color: black;
+    }
+    .left-side .navigations ul li a:hover {
+      color: #1da1f2;
+    }  
+    .left-side .navigations ul li span {
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    .left-side .navigations ul li a .active {
+    color: #1da1f2;
+    }
+  .left-side .navigations ul .btn-tweet {
+    padding: 15px 70px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #1da1f2;
+    border-radius: 25px;
+  }
+  .left-side .navigations ul .btn-tweet a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .left-side .navigations ul .btn-tweet:hover {
+    cursor: pointer;
+    background: #198ed6;
+  }
+  .profile-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .profile-box img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  .left-side .profile-box .profile-name {
+    padding-right: 30px;
+  }
+  .left-side .profile-box .profile-name p span{
+    color: #39393a;
+  }
+  .profile-box .options-icon {
+    color: #39393a;
+    margin-left: 16px;
+  }
+  .user-name {
+    color: #39393a;
+    font-size: 18px;
+  }
+/* End Left Side Style */
+/* Start middle Side Style */
+.middle-side {
+  flex: 0.5;
+  border-right: 1px solid #eff3f4;
+  height: auto;
+  overflow-x: hidden;
+}
+.middle-side .feed-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eff3f4; 
+}
+.feed-header h2 {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.feed-header a {
+  padding: 15px 15px 0 0;
+  font-size: 25px;
+}
+.feed-header a i {
+  color: #1da1f2;
+}
+.tweet-box {
+  display: flex;
+  border-bottom: 1px solid #eff3f4; 
+}
+.tweet-box .img-prof  {
+  padding: 15px 10px 0 15px;
+}
+.tweet-box .img-prof img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.tweet-box .write_tweet .text {
+  padding-top: 15px;
+}
+.tweet-box .write_tweet .text textarea {
+  border: none;
+  padding-top: 15px;
+  font-size: 20px;
+  resize: none;
+}
+.tweet-box .write_tweet .control-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.tweet-box .write_tweet .control-icons .icons ul {
+  display: flex;
+}
+.tweet-box .write_tweet .control-icons .icons ul li {
+  padding-right: 15px;
+  font-size: 18px;
+  color: #1da1f2;
+}
+.tweet-box .write_tweet .control-icons .btn-tweet {
+  padding: 10px 0px;
+}
+.tweet-box .write_tweet .control-icons .btn-tweet button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #8ecdf8;
+  color: white;
+  cursor: pointer;
+}
+.tweet-box .write_tweet .control-icons .btn-tweet button:hover {
+  background-color: #1da1f2;
+}
+.tweet_list {
+  background-color: white;
+}
+/* End middle Side Style */
+/* Start rihgt Side Style */
+.rihgt-side {
+  flex: 0.4;
+  height: auto;
+}
+.search input[type=text] {
+  width: 450px;
+  margin: 10px 25px;
+  padding: 15px 60px;
+  border-radius: 25px;
+  border: none;
+  background-color: #eff3f4;
+  background-image: url('../imgs/search-line.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+.trending {
+  width: 450px;
+  height: auto;
+  margin: 0px 25px;
+  background-color: #eff3f4;
+  border-radius: 15px;
+}
+.trending h2 {
+  font-size: 22px;
+  padding: 15px;
+}
+.trending .trend {
+  display: flex;
+  justify-content: space-between;
+}
+.trending .news {
+  font-size: 15px;
+  line-height: 5px;
+  padding-left: 15px;
+}
+.trending .news p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 700;
+}
+.trending .icon-point i {
+  padding-top: 15px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+/* End rihgt Side Style */
+
+
+
